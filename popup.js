@@ -17,6 +17,16 @@ function httpRequest() {
                     return;
                 }
                 for (var i = 0; i < files.length; i++) {
+                    var flag = 0;
+                    for (var j = 0; j < i; j++) {
+                        if (files[i] == files[j]) {
+                            flag = 1;
+                            break;
+                        }
+                    }
+                    if (flag == 1) {
+                        continue;
+                    }
                     const aLabel = document.createElement('a');
                     const aEvent = document.createEvent('MouseEvents');
                     aEvent.initEvent('click', false, false);
