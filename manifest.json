@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Blackboard downloader",
+    "description": "Download all notes of the current page.",
+    "version": "0.0.1",
+    "icons": {
+        "128" : "icons/icon.png"
+    },
+    "permissions": [
+      "tabs", "http://*/*","https://*/*", "accessibilityFeatures.modify", "accessibilityFeatures.read"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+  }
