@@ -3,7 +3,7 @@ This is a Chrome extension.
 
 Clone the repository:
 
-``
+``sh
 git clone https://github.com/ForwardStar/bb_downloader.git
 ``
 
